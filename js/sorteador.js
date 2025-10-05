@@ -19,9 +19,11 @@ function rolarDado(){
 
     let titulo = document.getElementById('tituloSorteador');
     let descricao = document.getElementById('descricaoSorteador');
+    let img = document.getElementById('imgSorteador');
 
     titulo.innerHTML = comidas[num-1][0];
     descricao.innerHTML = comidas[num-1][1];
+    img.innerHTML = '<img src="assets/image/'+num+'.png" alt="'+(comidas[num-1][1])+'" class="imgSorteadorComida" width="500px">';
 }
 
 function gerarNumeroAleatorio(){

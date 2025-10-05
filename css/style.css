@@ -129,6 +129,11 @@ main{
     margin-bottom: 2em;
     display: block;
 }
+.imgSorteadorComida{
+    width: 10em;
+    margin: auto;
+    display: block;
+}
 .descricaoSorteador, .cliqueAqui{
     margin: 2em 0;
 }
