@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icone top -->
+    <link rel="shortcut icon" href="assets/icon/icon.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="assets/icon/icon.png" alt="tigela de macarrão com dois hashis">
+            <h1>Rangar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="#">Sorteador de Prato</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="separadorSorteador">
+            <section class="Descricao">
+                <h1>Sorteador de Prato</h1>
+                <p>Está indeciso sobre o que comer hoje? Deixe que a gente te ajude!</p>
+                <p>Com o nosso sorteador de pratos, você pode se aventurar pela culinária oriental e descobrir sabores incríveis sem precisar pensar muito.</p>
+                <p>Cada sorteio traz uma nova experiência gastronômica — de pratos tradicionais a receitas menos conhecidas, todas cheias de história e sabor.</p>
+                <p>Prepare-se para explorar o melhor da cozinha oriental de um jeito divertido, prático e delicioso! 🍱✨</p>
+            </section>
+            <section class="Sorteador">
+                <div class="box">
+                    <img src="assets/image/comidaChinesa.png" alt="tigela de macarrão com dois hashis" class="imgSorteador">
+                    <span class="tituloSorteador">Descubra novos pratos ocidentais!</span>
+                    <p class="descricaoSorteador">clique para sortear</p>
+                    <div>
+                        <button class="botaoSorteador vermelho">Sortear prato <img src="assets/image/dados.png" alt="dois dados" onclick="rolarDado()"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h2>Rangar</h2>
+            <p><i class="fa-solid fa-phone"></i> (11) 96636-9160</p>
+            <p><i class="fa-solid fa-envelope"></i> tainakasai01@gmail.com</p>
+        </section>
+        <div>
+            <section>
+            <span class="categoriaFooter">Receitas</span>
+            <p><a href="#">Em alta</a></p>
+            <p><a href="#">Japonesas</a></p>
+            <p><a href="#">Chinesas</a></p>
+            <p><a href="#">Coreanas</a></p>
+            </section>
+            <section>
+                <span class="categoriaFooter"> Redes sociais</span>
+                <p><a href="#">LinkedIn</a></p>
+                <p><a href="#">Github</a></p>
+                <p><a href="#">Behance</a></p>
+                <p><a href="#">Instagram</a></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

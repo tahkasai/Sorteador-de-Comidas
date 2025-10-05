@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fonte-titulo: "Anek Malayalam", sans-serif;
+    --fonte-padrao: "Montserrat", sans-serif;
+
+    --creme: #FEFCED;
+    --preto: #393534;
+    --vermelho: #C4381D;
+    --vermelho-escuro: #ae290f;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--fonte-padrao);
+    color: var(--preto);
+    background-color: var(--creme);
+}
+h1{
+    font-size: 2.5em;
+}
+/* Header */
+.logo{
+    margin-top: 1.5em;
+    margin-bottom: .75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: .07em;
+}
+.logo img{
+    width: 4em;
+}
+.menu i{
+    cursor: pointer;
+    font-size: 2em;
+    display: none;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+    padding: 20px 90px;
+    border-radius: 2em;
+    color: var(--creme);
+    background-color: var(--preto);
+}
+.menu a{
+    position: relative;
+    display: inline-block;
+    color: var(--creme);
+    text-decoration: none;
+}
+.menu a::before{
+    content: '';
+    width: 100%;
+    height: .15em;
+    background-color: var(--vermelho);
+    bottom: -6px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s;
+    position: absolute;
+}
+.menu a:hover::before{
+    transform: scaleX(1);
+}
+@media (max-width:780px) {
+    .menu{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu i{
+        display: inline;
+    }
+    .menu ul{
+        display: none;
+    }
+}
+/* Main Sorteador*/
+main{
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+}
+.separadorSorteador{
+    display: flex;
+    justify-content: space-between;
+}
+.Descricao{
+    width: 80%;
+    margin-right: 3em;
+}
+.Descricao h1{
+    color: var(--vermelho);
+    margin-bottom: .7em;
+}
+.Descricao p{
+    margin-bottom: 1.5em;
+}
+.Sorteador{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    border: solid var(--preto) 3px;
+    width: 50em;
+    height: 20em;
+    padding: 2em;
+}
+.tituloSorteador{
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+.imgSorteador{
+    width: 5em;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+}
+.descricaoSorteador{
+    margin: 2em 0;
+}
+.box div{
+    display: flex;
+    justify-content: center;
+}
+.botaoSorteador{
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2em;
+    padding: 1em 2em;
+    width: 25em;
+    color: var(--creme);
+    background-color: var(--vermelho);
+}
+.botaoSorteador img{
+    width: 2em;
+}
+.botaoSorteador:hover{
+    transition: .7s;
+    background-color: var(--vermelho-escuro);
+}
+@media (max-width: 1045px) {
+    .Sorteador{
+        width: 60%;
+    }
+}
+@media (max-width:780px) {
+    .separadorSorteador{
+        display: block;
+    }
+    .Descricao{
+        width: 100%;
+    }
+    .Sorteador{
+        width: 85%;
+    }
+}
+@media (max-width: 564px) {
+    .Sorteador{
+        width: 80%;
+    }
+    .botaoSorteador{
+        width: 90%;
+    }
+}
+/* Footer */
+footer{
+    padding: 3em 5%;
+    margin-top: 3em;
+    background-color: var(--preto);
+    color: var(--creme);
+    display: flex;
+    justify-content: space-between;
+}
+footer h2{
+    font-size: 2.5em;
+    letter-spacing: .07em;
+    font-family: var(--fonte-titulo);
+    margin-bottom: .6em;
+}
+footer div{
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+footer div section{
+    display: grid;
+    gap: 0.8em;
+    margin-left: 3em;
+}
+footer p{
+    font-weight: 200;
+}
+footer div a{
+    text-decoration: none;
+    color: var(--creme);
+}
+footer div a:hover{
+    color: var(--vermelho);
+}
+.categoriaFooter{
+    font-weight: 600;
+}
+@media (max-width: 564px) {
+    footer{
+        text-align: center;
+        display: block;
+    }
+    footer div{
+        display: block;
+    }
+    footer div section{
+        margin-left: 0;
+        margin-top: 2em;
+        text-align: center;
+    }
+}
