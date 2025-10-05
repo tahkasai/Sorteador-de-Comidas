@@ -40,10 +40,11 @@
             <section class="Sorteador">
                 <div class="box">
                     <img src="assets/image/comidaChinesa.png" alt="tigela de macarrão com dois hashis" class="imgSorteador">
-                    <span class="tituloSorteador">Descubra novos pratos ocidentais!</span>
-                    <p class="descricaoSorteador">clique para sortear</p>
+                    <span class="tituloSorteador" id="tituloSorteador">Descubra novos pratos ocidentais!</span>
+                    <p class="descricaoSorteador" id="descricaoSorteador"></p>
+                    <p class="cliqueAqui">clique para sortear</p>
                     <div>
-                        <button class="botaoSorteador vermelho">Sortear prato <img src="assets/image/dados.png" alt="dois dados" onclick="rolarDado()"></button>
+                        <button class="botaoSorteador vermelho" onclick="rolarDado()">Sortear prato <img src="assets/image/dados.png" alt="dois dados"></button>
                     </div>
                 </div>
             </section>
@@ -72,5 +73,7 @@
             </section>
         </div>
     </footer>
+    <!-- Script -->
+    <script src="js/sorteador.js" defer></script>
 </body>
 </html>
