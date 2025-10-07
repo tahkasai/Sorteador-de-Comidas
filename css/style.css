@@ -148,6 +148,10 @@ h1{
 .descricaoSorteador, .cliqueAqui{
     margin: 2em 0;
 }
+.cliqueAqui a{
+    text-decoration: none;
+    color: var(--vermelho);
+}
 .box div{
     display: flex;
     justify-content: center;
@@ -302,14 +306,15 @@ footer div a:hover{
     align-items: end;
     border-radius: 2em;
     border: solid var(--preto) 2px;
-    width: 80%;
+    width: 100%;
 }
 .form form{
-    padding: 1em 1.5em;
+    width: 50%;
+    padding: 2em 1.5em;
 }
 .form img{
     border-radius: 0 0 2em 0;
-    height: 50vh;
+    width: 45%;
 }
 .inputForm, .feedbackReceita form textarea{
     display: block;
@@ -318,7 +323,7 @@ footer div a:hover{
     border-radius: 2em;
     padding: 0.5em 1em;
     margin: .5em 0;
-    width: 200%;
+    width: 100%;
 }
 .feedbackReceita form textarea{
     height: 10em;
