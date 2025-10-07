@@ -20,6 +20,17 @@ body{
 h1{
     font-size: 2.5em;
 }
+.vermelho{
+    color: var(--creme);
+    background-color: var(--vermelho);
+}
+.botao{
+    margin-top: .7em;
+    cursor: pointer;
+    border-radius: 2em;
+    border: none;
+    padding: 0.5em 2em;
+}
 /* Header */
 .logo{
     margin-top: 1.5em;
@@ -88,8 +99,8 @@ h1{
     }
 }
 /* Main Sorteador*/
-main{
-    width: 90%;
+.mainSorteador{
+    width: 85%;
     margin: auto;
     margin-top: 3em;
 }
@@ -150,8 +161,6 @@ main{
     border-radius: 2em;
     padding: 1em 2em;
     width: 25em;
-    color: var(--creme);
-    background-color: var(--vermelho);
 }
 .botaoSorteador img{
     width: 2em;
@@ -235,4 +244,87 @@ footer div a:hover{
         margin-top: 2em;
         text-align: center;
     }
+}
+/* Receitas */
+.bannerReceita{
+    width: 100%;
+    background-image: url(../assets/image/wave/wave.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom;
+}
+.bannerReceita img{
+    margin-left: 3em;
+    width: 45%;
+}
+.categoriaReceita{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--vermelho);
+}
+.bannerReceita h1{
+    font-size: 3.2em;
+    margin: .5em 0;
+}
+.bannerReceita p{
+    margin-bottom: 3em;
+}
+.informacaoBanner{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ingredientesReceita{
+    background-color: var(--vermelho);
+    color: var(--creme);
+    padding-bottom: 3em;
+}
+.informacaoIngredientes, .modoDePreparo, .feedbackReceita{
+    margin: auto;
+    width: 85%;
+}
+.informacaoIngredientes h3, .modoDePreparo h2, .feedbackReceita h2{
+    margin: 1em 0;
+}
+.informacaoIngredientes li, .modoDePreparo li{
+    margin-left: 1em;
+}
+.modoDePreparo h2{
+    margin: 2em 0 1em 0;
+}
+.feedbackReceita p{
+    margin-bottom: 2em;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-radius: 2em;
+    border: solid var(--preto) 2px;
+    width: 80%;
+}
+.form form{
+    padding: 1em 1.5em;
+}
+.form img{
+    border-radius: 0 0 2em 0;
+    height: 50vh;
+}
+.inputForm, .feedbackReceita form textarea{
+    display: block;
+    border: solid var(--preto) 1px;
+    background-color: transparent;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    margin: .5em 0;
+    width: 200%;
+}
+.feedbackReceita form textarea{
+    height: 10em;
+    padding: 1em;
+    resize: none;
+}
+.feedbackReceita label{
+    font-weight: 600;
 }
