@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Icone top -->
+    <link rel="shortcut icon" href="../../assets/icon/icon.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="../../assets/icon/icon.png" alt="tigela de macarrão com dois hashis">
+            <h1>Rangar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="../../index.html">Sorteador de Prato</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </nav>
+    </header>
+    <main class="mainReceita">
+        <section class="bannerReceita">
+            <div class="informacaoBanner">
+                <div>
+                    <span class="categoriaReceita">Receita japonesa</span>
+                    <h1>Ramen (ラーメン)</h1>
+                    <p>Sopa de macarrão com caldo saboroso (de porco, frango ou peixe) e coberturas como ovo, nori e cebolinha.</p>
+                </div>
+                <img src="../../assets/image/comida/2.png" alt="">
+            </div>
+        </section>
+        <section class="ingredientesReceita">
+            <div class="informacaoIngredientes">
+                <h2>Ingredientes (2 doses)</h2>
+                <h3>Caldo e temperos</h3>
+                <ul>
+                    <li>1 litro de caldo de galinha ou de legumes</li>
+                    <li>2 dentes de alho picados</li>
+                    <li>1 pedaço de gengibre (cerca de 2 cm) fatiado</li>
+                    <li>2 colheres de sopa de molho de soja (shoyu)</li>
+                    <li>1 colher de sopa de óleo de gergelim</li>
+                    <li>1 colher de chá de miso (opcional)</li>
+                </ul>
+                <h3>Macarrão</h3>
+                <ul>
+                    <li>200g de macarrão para ramen (ou macarrão tipo lámen)</li>
+                </ul>
+                <h3>Proteínas (opcional)</h3>
+                <ul>
+                    <li>Fatias finas de carne de porco, frango ou tofu</li>
+                    <li>1 ovo cozido (meio mole)</li>
+                </ul>
+                <h3>Vegetais e acompanhamentos (opcional)</h3>
+                <ul>
+                    <li>Cebolinha picada</li>
+                    <li>Broto de bambu</li>
+                    <li>Milho</li>
+                    <li>Algas (nori)</li>
+                </ul>        
+            </div>
+        </section>
+        <section class="modoDePreparo">
+            <h2>Modo de Preparo</h2>
+            <ol>
+                <li>Em uma panela, aqueça o óleo de gergelim e refogue o alho e o gengibre até ficarem aromáticos.</li>
+                <li>Acrescente o caldo de galinha ou legumes e deixe ferver.</li>
+                <li>Adicione o molho de soja e o miso, misture bem.</li>
+                <li>Cozinhe o macarrão separadamente, conforme instruções da embalagem, e escorra.</li>
+                <li>Coloque o macarrão na tigela, despeje o caldo quente por cima.</li>
+                <li>Acrescente o ovo cozido cortado ao meio, a carne/frios (se for usar), e finalize com cebolinha e outros acompanhamentos que quiser.</li>
+            </ol>
+        </section>
+        <section class="feedbackReceita">
+            <h2>Dê seu feedback</h2>
+            <p>Sua ajuda faz toda a diferença para que possamos trazer ainda mais comidas deliciosas!</p>
+            <div class="form">
+                <form action="#">
+                    <label for="Nome">Nome</label>
+                    <input type="text" name="Nome" id="Nome"  class="inputForm" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="inputForm" required>
+                    <label for="texto">Mensagem</label>
+                    <textarea name="texto" id="texto" class="inputForm" required></textarea>
+                    <input type="submit" value="Enviar" class="botao vermelho">
+                </form>
+                <img src="../../assets/image/imgForm.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2>Rangar</h2>
+            <p><i class="fa-solid fa-phone"></i> (11) 96636-9160</p>
+            <p><i class="fa-solid fa-envelope"></i> tainakasai01@gmail.com</p>
+        </section>
+        <div>
+            <section>
+            <span class="categoriaFooter">Receitas</span>
+            <p><a href="#">Em alta</a></p>
+            <p><a href="#">Japonesas</a></p>
+            <p><a href="#">Chinesas</a></p>
+            <p><a href="#">Coreanas</a></p>
+            </section>
+            <section>
+                <span class="categoriaFooter"> Redes sociais</span>
+                <p><a href="https://www.linkedin.com/in/taina-kasai">LinkedIn</a></p>
+                <p><a href="https://github.com/tahkasai">Github</a></p>
+                <p><a href="https://www.behance.net/tahkasai">Behance</a></p>
+                <p><a href="https://www.instagram.com/tah_kasai">Instagram</a></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

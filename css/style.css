@@ -288,11 +288,11 @@ footer div a:hover{
     margin: auto;
     width: 85%;
 }
-.informacaoIngredientes h3, .modoDePreparo h2, .feedbackReceita h2{
+.informacaoIngredientes h3, .modoDePreparo h2, .feedbackReceita h2, .modoDePreparo h3{
     margin: 1em 0;
 }
 .informacaoIngredientes li, .modoDePreparo li{
-    margin-left: 1em;
+    margin-left: 1.2em;
 }
 .modoDePreparo h2{
     margin: 2em 0 1em 0;

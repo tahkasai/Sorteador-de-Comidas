@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Icone top -->
+    <link rel="shortcut icon" href="../../assets/icon/icon.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="menu">
+        <div class="logo">
+            <img src="../../assets/icon/icon.png" alt="tigela de macarrão com dois hashis">
+            <h1>Rangar</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="../../index.html">Sorteador de Prato</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </nav>
+    </header>
+    <main class="mainReceita">
+        <section class="bannerReceita">
+            <div class="informacaoBanner">
+                <div>
+                    <span class="categoriaReceita">Receita Chinesa</span>
+                    <h1>Chop suey (杂碎)</h1>
+                    <p>Mistura de legumes salteados com carne e molho à base de soja.</p>
+                </div>
+                <img src="../../assets/image/comida/5.png" alt="">
+            </div>
+        </section>
+        <section class="ingredientesReceita">
+            <div class="informacaoIngredientes">
+                <h2>Ingredientes</h2>
+                <h3>Proteína (opcional)</h3>
+                <ul>
+                    <li>300g de frango em tiras (ou carne bovina, porco, camarão ou tofu)</li>
+                </ul>
+                <h3>Legumes</h3>
+                <ul>
+                    <li>1 cenoura em tiras finas</li>
+                    <li>1 cebola cortada em pétalas</li>
+                    <li>1 pimentão (vermelho ou verde) em tiras</li>
+                    <li>1 xícara de brócolis</li>
+                    <li>1 xícara de repolho ou acelga em tiras</li>
+                    <li>1 xícara de broto de feijão (moyashi)</li>
+                    <li>1 talo de salsão (opcional), em fatias finas</li>
+                </ul>
+                <h3>Molho</h3>
+                <ul>
+                    <li>3 colheres de sopa de molho de soja (shoyu)</li>
+                    <li>1 colher de sopa de óleo de gergelim (opcional, dá mais sabor)</li>
+                    <li>1 colher de sopa de amido de milho (dissolvido em 1/2 xícara de água)</li>
+                    <li>1 colher de chá de açúcar</li>
+                    <li>1 dente de alho picado</li>
+                    <li>1 colher de chá de gengibre ralado (opcional)</li>
+                </ul>
+                <h3>Para refogar</h3>
+                <ul>
+                    <li>2 colheres de sopa de óleo vegetal</li>
+                </ul>        
+            </div>
+        </section>
+        <section class="modoDePreparo">
+            <h2>Modo de Preparo</h2>
+            <ol>
+                <li>Em uma frigideira grande ou wok, aqueça o óleo vegetal.</li>
+                <li>Refogue o alho e o gengibre por 30 segundos.</li>
+                <li>Adicione a proteína (ex: frango) e cozinhe até dourar. Retire e reserve.</li>
+                <li>Na mesma panela, adicione um pouco mais de óleo se necessário e refogue os legumes mais duros primeiro (cenoura, brócolis, pimentão). Cozinhe por 3-4 minutos.</li>
+                <li>Adicione os legumes mais macios (repolho, cebola, broto de feijão) e refogue por mais 2-3 minutos. Os legumes devem ficar levemente crocantes.</li>            
+                <li>Volte com a carne para a panela.</li>
+                <li>Adicione o molho de soja, o açúcar e o óleo de gergelim. Misture bem.</li>
+                <li>Por fim, adicione o amido de milho dissolvido na água e mexa até o molho engrossar levemente.</li>
+                <li>Ajuste o sal ou molho de soja a gosto e sirva quente com arroz branco.</li>
+            </ol>
+        </section>
+        <section class="feedbackReceita">
+            <h2>Dê seu feedback</h2>
+            <p>Sua ajuda faz toda a diferença para que possamos trazer ainda mais comidas deliciosas!</p>
+            <div class="form">
+                <form action="#">
+                    <label for="Nome">Nome</label>
+                    <input type="text" name="Nome" id="Nome"  class="inputForm" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="inputForm" required>
+                    <label for="texto">Mensagem</label>
+                    <textarea name="texto" id="texto" class="inputForm" required></textarea>
+                    <input type="submit" value="Enviar" class="botao vermelho">
+                </form>
+                <img src="../../assets/image/imgForm.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2>Rangar</h2>
+            <p><i class="fa-solid fa-phone"></i> (11) 96636-9160</p>
+            <p><i class="fa-solid fa-envelope"></i> tainakasai01@gmail.com</p>
+        </section>
+        <div>
+            <section>
+            <span class="categoriaFooter">Receitas</span>
+            <p><a href="#">Em alta</a></p>
+            <p><a href="#">Japonesas</a></p>
+            <p><a href="#">Chinesas</a></p>
+            <p><a href="#">Coreanas</a></p>
+            </section>
+            <section>
+                <span class="categoriaFooter"> Redes sociais</span>
+                <p><a href="https://www.linkedin.com/in/taina-kasai">LinkedIn</a></p>
+                <p><a href="https://github.com/tahkasai">Github</a></p>
+                <p><a href="https://www.behance.net/tahkasai">Behance</a></p>
+                <p><a href="https://www.instagram.com/tah_kasai">Instagram</a></p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
