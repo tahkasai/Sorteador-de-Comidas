@@ -7,6 +7,9 @@
     --preto: #393534;
     --vermelho: #C4381D;
     --vermelho-escuro: #ae290f;
+    --cinza-claro: rgb(230, 230, 230);
+    --cinza: rgb(197, 197, 197);
+    --cinza-escuro: rgb(159, 159, 159);
 }
 *{
     margin: 0;
@@ -24,12 +27,29 @@ h1{
     color: var(--creme);
     background-color: var(--vermelho);
 }
+.vermelho:hover{
+    transition: .3s;
+    background-color: var(--vermelho-escuro);
+}
+.cinza{
+    background-color: var(--cinza);
+}
+.cinza:hover{
+    transition: .3s;
+    background-color: var(--cinza-escuro);
+}
 .botao{
     margin-top: .7em;
     cursor: pointer;
     border-radius: 2em;
     border: none;
     padding: 0.5em 2em;
+}
+.between{
+    justify-content: space-between;
+}
+.botaoCorda{
+    border: solid var(--preto) 1px;
 }
 /* Header */
 .logo{
@@ -99,7 +119,7 @@ h1{
     }
 }
 /* Main Sorteador*/
-.mainSorteador{
+.mainSorteador,.contato{
     width: 85%;
     margin: auto;
     margin-top: 3em;
@@ -334,3 +354,53 @@ footer div a:hover{
     font-weight: 600;
 }
 /* Main contato */
+.boxContato {
+    display: flex;
+    gap: 2em;
+    margin: 2em 0;
+}
+.formContato {
+    flex: 5;
+}
+.infoContato {
+    display: grid;
+    gap: 2.5em;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    color: var(--creme);
+    background-color: var(--vermelho);
+    flex: 2;
+}
+.formContato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexContato {
+    display: flex;
+    gap: 1em;
+}
+.inputContato {
+    flex: 1;
+    border: none;
+    background-color: var(--cinza-claro);
+    font-family: var(--fonte-padrao);
+    padding: 1.2em 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+.formContato textarea{
+    resize: none;
+}
+.botaoContato {
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    padding: .8em 2.5em;
+    border-radius: 1em;
+}
+.topico{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: .8em;
+}
