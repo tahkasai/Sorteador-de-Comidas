@@ -404,3 +404,82 @@ footer div a:hover{
     font-weight: 600;
     margin-bottom: .8em;
 }
+/* Todas as receitas */
+.bannerReceitas{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../assets/image/wave/wave2.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom;
+}
+.infBannerReceitas{
+    padding-top: 6em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.containerReceitas{
+    color: var(--creme);
+    width: 100%;
+    background-color: var(--vermelho);
+    margin-bottom: -3em;
+}
+.boxReceitas{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    gap: 4em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.cardReceita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-bottom: 2em;
+    border-radius: 2em;
+    padding: 0 1em;
+    padding-bottom: 1em;
+    color: var(--preto);
+    background-color: var(--creme);
+    width: 100%;
+}
+.cardReceita div{
+    align-items: end;
+}
+.cardReceita img{
+    align-self: center; /*propriedade do Flexbox e Grid que serve para alinhar um único item dentro do seu contêiner*/
+    margin-top: -5em;
+    width: 15em;
+}
+.tituloCard{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.cardReceita p{
+    margin: 1em 0;
+}
+.botaoReceitas{
+    border: none;
+    padding: 1em 1.5em;
+}
+.botaoReceitas a{
+    color: var(--creme);
+    text-decoration: none;
+}
+@media (max-width:1200px) {
+    .bannerReceitas{
+        height: 60vh;
+    }
+    .boxReceitas{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:780px) {
+    .bannerReceitas{
+        height: 50vh;
+    }
+    .boxReceitas{
+        grid-template-columns: 1fr;
+    }
+}
